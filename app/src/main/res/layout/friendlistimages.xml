@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:src="@drawable/myspace_tom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FRIEND"
+        android:id="@+id/friendName"
+        android:layout_gravity="center_horizontal"
+        android:layout_toEndOf="@+id/image1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="STATUS"
+        android:id="@+id/friendStatus"
+        android:layout_toEndOf="@+id/image1"
+        android:layout_alignBottom="@+id/image1"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+</RelativeLayout>
